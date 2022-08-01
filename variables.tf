@@ -1,22 +1,22 @@
 variable "project_name" {
     description = "Google Cloud Platform Project Name"
-    type = "string"
+    type = string
     default = "terraform-gcp-77"
 }
 variable "project_id" {
     description = "Google Cloud Platform Project ID"
-    type = "string"
+    type = string
 }
 
 variable "location" {
-    type = "string"
+    type = string
 }
 
 variable "region" {
-    type = "string"
+    type = string
 }
 
 variable "zone" {
-    type = "string"
+    type = string
     default = "us-east1-c"
 }
