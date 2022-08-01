@@ -1,7 +1,7 @@
 variable "project_name" {
     description = "Google Cloud Platform Project Name"
     type = "string"
-    default = "testprep"
+    default = "terraform-gcp-77"
 }
 variable "project_id" {
     description = "Google Cloud Platform Project ID"

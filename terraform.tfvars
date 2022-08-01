@@ -1,6 +1,6 @@
-project_name = "testprep"
+project_name = "terraform-gcp-77"
 
-project_id  = "testprep-323202"
+project_id  = "terraform-gcp-77"
 
 location = "us-east"
 
