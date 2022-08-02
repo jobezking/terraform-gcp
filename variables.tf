@@ -20,3 +20,18 @@ variable "zone" {
     type = string
     default = "us-east1-c"
 }
+
+variable "arm-location" {
+    type = string
+    default = "us-central1"
+}
+
+variable "arm-region" {
+    type = string
+    default = "us-central1"
+}
+
+variable "arm-zone" {
+    type = string
+    default = "us-central1-f"
+}
