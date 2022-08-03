@@ -5,9 +5,13 @@
 #	project_id = var.project_id
 #	#org_id = "1234567"
 #}
-resource "google_app_engine_application"  "test-app" {
+resource "google_app_engine_application"  "app-arm" {
 	project = var.project_id
-	location_id = var.location
+	#location_id = var.location
+  location_id = "us-central"
+  feature_settings {
+    split_health_checks = true
+  }
 }
 
 #resource "google_service_account" "default" {
@@ -16,7 +20,7 @@ resource "google_app_engine_application"  "test-app" {
 #}
 
 resource "google_compute_instance" "default" {
-  name         = "test-arm"
+  name         = "test-arm-2"
   machine_type = "t2a-standard-1"
   zone         = var.arm-zone
 
