@@ -5,10 +5,9 @@
 #	project_id = var.project_id
 #	#org_id = "1234567"
 #}
-resource "google_app_engine_application"  "app-arm" {
+resource "google_app_engine_application"  "app" {
 	project = var.project_id
-	#location_id = var.location
-  location_id = "us-central"
+	location_id = var.location
   feature_settings {
     split_health_checks = true
   }
