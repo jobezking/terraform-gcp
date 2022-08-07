@@ -35,11 +35,3 @@ variable "arm-zone" {
     type = string
     default = "us-central1-f"
 }
-
-variable "arm-image" {
-  default = "debian-cloud/debian-11-bullseye-arm64-v20220719"
-}
-
-variable "arm-machine-type" {
-  default = "t2a-standard-1"
-}
