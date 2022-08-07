@@ -34,7 +34,6 @@ variable "arm-region" {
 variable "arm-zone" {
     type = string
     default = "us-central1-f"
-<<<<<<< HEAD
 }
 
 variable "arm-image" {
@@ -43,6 +42,4 @@ variable "arm-image" {
 
 variable "arm-machine-type" {
   default = "t2a-standard-1"
-=======
->>>>>>> 0c336ed2e9eb072df7108fa10549dd372945463b
 }
