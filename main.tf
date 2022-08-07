@@ -7,12 +7,24 @@
 #}
 resource "google_app_engine_application"  "test-app" {
 	project = var.project_id
+<<<<<<< HEAD
 	location_id = var.location
 }
+=======
+	#location_id = var.location
+  location_id = "us-central"
+  feature_settings {
+    split_health_checks = true
+  }
+>>>>>>> 0c336ed2e9eb072df7108fa10549dd372945463b
 
 resource "google_compute_instance" "default" {
   name         = "test-arm"
+<<<<<<< HEAD
   machine_type = var.arm-machine-type
+=======
+  machine_type = "t2a-standard-1"
+>>>>>>> 0c336ed2e9eb072df7108fa10549dd372945463b
   zone         = var.arm-zone
 
   tags = ["foo", "bar"]
