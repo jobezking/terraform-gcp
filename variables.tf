@@ -36,17 +36,10 @@ variable "arm-zone" {
     default = "us-central1-f"
 }
 
-variable "gke_username" {
-  default     = ""
-  description = "gke username"
+variable "arm-image" {
+  default = "debian-cloud/debian-11-bullseye-arm64-v20220719"
 }
 
-variable "gke_password" {
-  default     = ""
-  description = "gke password"
-}
-
-variable "gke_num_nodes" {
-  default     = 2
-  description = "number of gke nodes"
+variable "arm-machine-type" {
+  default = "t2a-standard-1"
 }
