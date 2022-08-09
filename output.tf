@@ -11,3 +11,13 @@ output "project_id" {
 output "ip" {
   value = google_compute_address.vm_static_ip.address
 }
+
+output "kubernetes_cluster_name" {
+  value       = google_container_cluster.primary.name
+  description = "GKE Cluster Name"
+}
+
+output "kubernetes_cluster_host" {
+  value       = google_container_cluster.primary.endpoint
+  description = "GKE Cluster Host"
+}

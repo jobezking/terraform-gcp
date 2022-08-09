@@ -21,6 +21,10 @@ variable "zone" {
     default = "us-east1-c"
 }
 
+variable "machine-type" {
+  default = "n1-standard-1"
+}
+
 variable "arm-location" {
     type = string
     default = "us-central1"
@@ -42,4 +46,19 @@ variable "arm-image" {
 
 variable "arm-machine-type" {
   default = "t2a-standard-1"
+}
+
+variable "gke_username" {
+  default     = ""
+  description = "gke username"
+}
+
+variable "gke_password" {
+  default     = ""
+  description = "gke password"
+}
+
+variable "gke_num_nodes" {
+  default     = 2
+  description = "number of gke nodes"
 }
